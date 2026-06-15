@@ -1,0 +1,14 @@
+# Windows temporary files
+~$*
+Thumbs.db
+
+# macOS files
+.DS_Store
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userossc
+*.sln.docstates
