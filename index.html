@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahammad Kaif | AI Engineer & Full Stack Web Developer</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portfolio of Mahammad Kaif, a passionate BCA student, AI enthusiast, Python developer, and web developer building intelligent AI agents, automation tools, and modern digital experiences.">
+    <meta name="keywords"
+        content="Mahammad Kaif, Portfolio, AI Developer, Python Developer, Web Developer, AI Agent Builder, BCA Student, Ilkal, Karnataka, India, MechFinder, Jarvis AI Assistant">
+    <meta name="author" content="Mahammad Kaif">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mahammadkaif.dev/">
+    <meta property="og:title" content="Mahammad Kaif | AI Engineer & Full Stack Web Developer">
+    <meta property="og:description"
+        content="Explore Mahammad Kaif's portfolio. Building AI-powered solutions, intelligent applications, and modern digital experiences.">
+    <meta property="og:image" content="assets/avatar-placeholder.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mahammadkaif.dev/">
+    <meta property="twitter:title" content="Mahammad Kaif | AI Engineer & Full Stack Web Developer">
+    <meta property="twitter:description"
+        content="Explore Mahammad Kaif's portfolio. Building AI-powered solutions, intelligent applications, and modern digital experiences.">
+    <meta property="twitter:image" content="assets/avatar-placeholder.png">
+
+    <!-- JSON-LD Structured Data Schema for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mahammad Kaif",
+      "jobTitle": "AI Enthusiast & Software Developer",
+      "url": "https://mahammadkaif.dev/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ilkal",
+        "addressRegion": "Karnataka",
+        "addressCountry": "India"
+      },
+      "email": "Kaifchoudri123@gmail.com",
+      "telephone": "+917899200478",
+      "sameAs": [
+        "https://github.com",
+        "https://linkedin.com",
+        "https://instagram.com",
+        "https://twitter.com"
+      ],
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Generative AI",
+        "AI Agents",
+        "Python Programming",
+        "Web Development",
+        "MySQL Databases",
+        "Prompt Engineering"
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts: Outfit (For Headings) & Inter (For Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader-container">
+            <div class="loader-logo">MK</div>
+            <div class="loader-bar-bg">
+                <div class="loader-bar"></div>
+            </div>
+            <div class="loader-text">Loading Experience...</div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+    <div class="custom-cursor-outline" id="custom-cursor-outline"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Background Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="Mahammad Kaif - Back to home">
+                <span class="logo-m">M</span><span class="logo-k">K</span>
+            </a>
+
+            <!-- Mobile Hamburger Menu Button -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+                <span class="bar bar-3"></span>
+            </button>
+
+            <!-- Navigation Menu Links -->
+            <nav class="nav-menu" id="nav-menu" role="navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Utilities (Theme Toggle) -->
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme"
+                    title="Toggle dark/light theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="home">
+            <!-- Animated decorative background elements -->
+            <div class="glow-blob glow-blob-1"></div>
+            <div class="glow-blob glow-blob-2"></div>
+            <div class="glow-blob glow-blob-3"></div>
+
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-container">
+                        <span class="hero-badge"><span class="badge-dot"></span> Open to Internships & Projects</span>
+                    </div>
+
+                    <h1 class="hero-headline">
+                        Hi, I'm <span class="gradient-text">Mahammad Kaif</span>
+                    </h1>
+
+                    <div class="typing-container">
+                        <span class="static-txt">I am a </span>
+                        <span class="dynamic-txt" id="typing-text"></span>
+                        <span class="cursor-typing">|</span>
+                    </div>
+
+                    <p class="hero-subheading">
+                        Passionate about Artificial Intelligence, Software Development, and Building Innovative Digital
+                        Solutions. Creating intelligent applications and modern interactive web experiences.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span>Hire Me</span>
+                        </a>
+                        <a href="assets/resume-placeholder.pdf" class="btn btn-text"
+                            download="Mahammad_Kaif_Resume.pdf">
+                            <i class="fa-solid fa-download"></i>
+                            <span>Download Resume</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <span class="socials-label">Connect:</span>
+                        <div class="social-links">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub Profiles"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="LinkedIn Profiles"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="Twitter Profile"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#home" aria-label="Internal Portfolio Link"><i class="fa-solid fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="avatar-container">
+                        <div class="avatar-glow"></div>
+                        <div class="avatar-border">
+                            <div class="avatar-inner">
+                                <img src="assets/kaif.jpeg" alt="Mahammad Kaif Profile" class="avatar-img"
+                                    id="profile-img">
+                            </div>
+                        </div>
+
+                        <!-- Floating Tech Nodes -->
+                        <div class="floating-node node-python" data-speed="1.2" title="Python"><i
+                                class="fa-brands fa-python"></i></div>
+                        <div class="floating-node node-js" data-speed="1.8" title="JavaScript"><i
+                                class="fa-brands fa-js"></i></div>
+                        <div class="floating-node node-ai" data-speed="1.5" title="AI Agents"><i
+                                class="fa-solid fa-brain"></i></div>
+                        <div class="floating-node node-web" data-speed="2.2" title="Web Dev"><i
+                                class="fa-solid fa-code"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <a href="#about" class="scroll-down" aria-label="Scroll to About Me section">
+                <span class="mouse-scroll">
+                    <span class="wheel"></span>
+                </span>
+                <span class="scroll-text">Explore Portfolio</span>
+            </a>
+        </section>
+
+
+        <!-- ABOUT ME SECTION -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="section-header align-center">
+                    <span class="section-subtitle">Discovery</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-info-panel reveal-on-scroll">
+                        <h3 class="about-lead-title">Bridging the Gap Between <span class="gradient-text">Human Intent &
+                                AI Action</span></h3>
+                        <p class="about-text">
+                            I am a BCA student passionate about Artificial Intelligence, Generative AI, Web Development,
+                            and Software Engineering. I enjoy developing intelligent applications, AI agents, automation
+                            tools, and modern websites that solve real-world problems.
+                        </p>
+                        <p class="about-text">
+                            My goal is to leverage emerging technologies and innovation to create impactful solutions
+                            while continuously expanding my technical expertise. I thrive at the intersection of
+                            creative front-end design and complex back-end logic, applying modern paradigms to make
+                            digital interactions seamless.
+                        </p>
+
+                        <div class="about-personal-details">
+                            <div class="detail-item">
+                                <span class="detail-label"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                                <span class="detail-val">Ilkal, Karnataka, India</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label"><i class="fa-solid fa-envelope"></i> Email:</span>
+                                <span class="detail-val"><a
+                                        href="mailto:Kaifchoudri123@gmail.com">Kaifchoudri123@gmail.com</a></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label"><i class="fa-solid fa-phone"></i> Phone:</span>
+                                <span class="detail-val"><a href="tel:7899200478">7899200478</a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-stats-panel">
+                        <div class="stats-grid">
+                            <div class="stat-card glass-card reveal-on-scroll" data-delay="0.1">
+                                <div class="stat-icon"><i class="fa-solid fa-square-check"></i></div>
+                                <div class="stat-number" data-target="10">0</div>
+                                <div class="stat-plus">+</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+
+                            <div class="stat-card glass-card reveal-on-scroll" data-delay="0.2">
+                                <div class="stat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                                <div class="stat-number" data-target="15">0</div>
+                                <div class="stat-plus">+</div>
+                                <div class="stat-label">Technologies Learned</div>
+                            </div>
+
+                            <div class="stat-card glass-card reveal-on-scroll" data-delay="0.3">
+                                <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <div class="stat-number" data-target="9" data-decimals="1">0</div>
+                                <div class="stat-plus">.4</div>
+                                <div class="stat-label">Academic CGPA</div>
+                            </div>
+
+                            <div class="stat-card glass-card reveal-on-scroll" data-delay="0.4">
+                                <div class="stat-icon"><i class="fa-solid fa-robot"></i></div>
+                                <div class="stat-value">Active</div>
+                                <div class="stat-label">AI Learning Journey</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SKILLS SECTION -->
+        <section class="skills-section section-padding" id="skills">
+            <div class="container">
+                <div class="section-header align-center">
+                    <span class="section-subtitle">Excellence</span>
+                    <h2 class="section-title">My Skills</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+
+                    <!-- Programming Languages -->
+                    <div class="skills-category-card glass-card reveal-on-scroll" data-delay="0.1">
+                        <div class="skills-cat-header">
+                            <div class="cat-icon"><i class="fa-solid fa-terminal"></i></div>
+                            <h3 class="cat-title">Programming</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">C#</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">C Language</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend Web Development -->
+                    <div class="skills-category-card glass-card reveal-on-scroll" data-delay="0.2">
+                        <div class="skills-cat-header">
+                            <div class="cat-icon"><i class="fa-solid fa-window-maximize"></i></div>
+                            <h3 class="cat-title">Frontend Dev</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">CSS3 & SASS</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Responsive Design</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Interactivity (DOM & ES6)</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">UI/UX Layouts</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI & Emerging Technologies -->
+                    <div class="skills-category-card glass-card reveal-on-scroll" data-delay="0.3">
+                        <div class="skills-cat-header">
+                            <div class="cat-icon"><i class="fa-solid fa-microchip"></i></div>
+                            <h3 class="cat-title">AI & Emerging</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Artificial Intelligence</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Generative AI Models</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">AI Agent Architectures</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Prompt Engineering</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">AI APIs (OpenAI, Gemini)</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Databases & Infrastructure -->
+                    <div class="skills-category-card glass-card reveal-on-scroll" data-delay="0.4">
+                        <div class="skills-cat-header">
+                            <div class="cat-icon"><i class="fa-solid fa-database"></i></div>
+                            <h3 class="cat-title">Databases & Tools</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MySQL</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL Queries & Optimization</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git & GitHub</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">VS Code / IDEs</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Database Schemas</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="--width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Professional & Soft Skills -->
+                    <div class="skills-category-card glass-card reveal-on-scroll" data-delay="0.5"
+                        style="grid-column: span 2;">
+                        <div class="skills-cat-header">
+                            <div class="cat-icon"><i class="fa-solid fa-people-group"></i></div>
+                            <h3 class="cat-title">Professional Qualities</h3>
+                        </div>
+                        <div class="professional-skills-flex">
+                            <div class="prof-skill-tag"><i class="fa-solid fa-lightbulb"></i> Problem Solving</div>
+                            <div class="prof-skill-tag"><i class="fa-solid fa-users"></i> Teamwork</div>
+                            <div class="prof-skill-tag"><i class="fa-solid fa-crown"></i> Leadership</div>
+                            <div class="prof-skill-tag"><i class="fa-solid fa-comments"></i> Communication</div>
+                            <div class="prof-skill-tag"><i class="fa-solid fa-list-check"></i> Project Management</div>
+                            <div class="prof-skill-tag"><i class="fa-solid fa-bolt"></i> Continuous Learner</div>
+                            <div class="prof-skill-tag"><i class="fa-solid fa-brain"></i> Critical Thinking</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PROJECTS SECTION -->
+        <section class="projects-section section-padding" id="projects">
+            <div class="container">
+                <div class="section-header align-center">
+                    <span class="section-subtitle">Showcase</span>
+                    <h2 class="section-title">My Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1: MechFinder -->
+                    <div class="project-card glass-card reveal-on-scroll" data-delay="0.1">
+                        <div class="project-img-wrapper">
+                            <div class="project-gradient-overlay"
+                                style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.4), rgba(6, 182, 212, 0.4));">
+                            </div>
+                            <div class="project-placeholder-icon"><i class="fa-solid fa-wrench"></i></div>
+                            <span class="project-tag">Web Platform</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">MechFinder</h3>
+                            <p class="project-desc">
+                                A smart web platform designed to connect vehicle owners with local mechanics efficiently
+                                and simplify vehicle service management. Includes location checking and simple profile
+                                setups.
+                            </p>
+                            <div class="project-features">
+                                <span><i class="fa-solid fa-check"></i> Discovery system</span>
+                                <span><i class="fa-solid fa-check"></i> Service records</span>
+                                <span><i class="fa-solid fa-check"></i> User-friendly UI</span>
+                            </div>
+                            <div class="project-tech-stack">
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">CSS</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">MySQL</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                    class="btn-project btn-github" aria-label="View source code on GitHub"><i
+                                        class="fa-brands fa-github"></i> Code</a>
+                                <a href="https://demo.com" target="_blank" rel="noopener noreferrer"
+                                    class="btn-project btn-live" aria-label="View live demo"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Jarvis AI Assistant -->
+                    <div class="project-card glass-card reveal-on-scroll" data-delay="0.2">
+                        <div class="project-img-wrapper">
+                            <div class="project-gradient-overlay"
+                                style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.4), rgba(99, 102, 241, 0.4));">
+                            </div>
+                            <div class="project-placeholder-icon"><i class="fa-solid fa-robot"></i></div>
+                            <span class="project-tag">AI Application</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Jarvis AI Assistant</h3>
+                            <p class="project-desc">
+                                An intelligent AI-powered virtual assistant developed using Python, capable of
+                                responding to user voice queries, automating desktop tasks, opening applications, and
+                                fetching info.
+                            </p>
+                            <div class="project-features">
+                                <span><i class="fa-solid fa-check"></i> Speech Recognition</span>
+                                <span><i class="fa-solid fa-check"></i> Desktop automation</span>
+                                <span><i class="fa-solid fa-check"></i> Custom API logic</span>
+                            </div>
+                            <div class="project-tech-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">AI APIs</span>
+                                <span class="tech-badge">SpeechRecognition</span>
+                                <span class="tech-badge">Pyttsx3</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                    class="btn-project btn-github" aria-label="View source code on GitHub"><i
+                                        class="fa-brands fa-github"></i> Code</a>
+                                <a href="https://demo.com" target="_blank" rel="noopener noreferrer"
+                                    class="btn-project btn-live" aria-label="View live demo"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: AI Agent -->
+                    <div class="project-card glass-card reveal-on-scroll" data-delay="0.3">
+                        <div class="project-img-wrapper">
+                            <div class="project-gradient-overlay"
+                                style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.4), rgba(139, 92, 246, 0.4));">
+                            </div>
+                            <div class="project-placeholder-icon"><i class="fa-solid fa-brain"></i></div>
+                            <span class="project-tag">AI System</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">AI Agent Builder</h3>
+                            <p class="project-desc">
+                                A customizable AI agent pipeline capable of answering user questions, executing
+                                multi-turn actions, parsing tools, and providing context-aware intelligent responses
+                                using LLM structures.
+                            </p>
+                            <div class="project-features">
+                                <span><i class="fa-solid fa-check"></i> Tool Calling</span>
+                                <span><i class="fa-solid fa-check"></i> Context retrieval</span>
+                                <span><i class="fa-solid fa-check"></i> Stream outputs</span>
+                            </div>
+                            <div class="project-tech-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Generative AI</span>
+                                <span class="tech-badge">LangChain</span>
+                                <span class="tech-badge">APIs</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                    class="btn-project btn-github" aria-label="View source code on GitHub"><i
+                                        class="fa-brands fa-github"></i> Code</a>
+                                <a href="https://demo.com" target="_blank" rel="noopener noreferrer"
+                                    class="btn-project btn-live" aria-label="View live demo"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: AI Educational Platform -->
+                    <div class="project-card glass-card reveal-on-scroll" data-delay="0.4">
+                        <div class="project-img-wrapper">
+                            <div class="project-gradient-overlay"
+                                style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.4), rgba(236, 72, 153, 0.4));">
+                            </div>
+                            <div class="project-placeholder-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <span class="project-tag">EdTech App</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">AI Educational Platform</h3>
+                            <p class="project-desc">
+                                Interactive learning interface demonstrating prompt engineering strategies, AI-driven
+                                image generation, generative audio/video guidelines, agent setups, and template-based
+                                site construction.
+                            </p>
+                            <div class="project-features">
+                                <span><i class="fa-solid fa-check"></i> Interactive tutorials</span>
+                                <span><i class="fa-solid fa-check"></i> Media generation examples</span>
+                                <span><i class="fa-solid fa-check"></i> Live sandboxes</span>
+                            </div>
+                            <div class="project-tech-stack">
+                                <span class="tech-badge">HTML/CSS</span>
+                                <span class="tech-badge">JS (ES6)</span>
+                                <span class="tech-badge">AI Models</span>
+                                <span class="tech-badge">UI Design</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                    class="btn-project btn-github" aria-label="View source code on GitHub"><i
+                                        class="fa-brands fa-github"></i> Code</a>
+                                <a href="https://demo.com" target="_blank" rel="noopener noreferrer"
+                                    class="btn-project btn-live" aria-label="View live demo"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- EDUCATION SECTION -->
+        <section class="education-section section-padding" id="education">
+            <div class="container">
+                <div class="section-header align-center">
+                    <span class="section-subtitle">Academic Credentials</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+
+                    <!-- Degree -->
+                    <div class="timeline-item reveal-on-scroll" data-delay="0.1">
+                        <div class="timeline-dot-wrapper">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Currently Pursuing</span>
+                            <h3 class="timeline-title">Bachelor of Computer Applications (BCA)</h3>
+                            <h4 class="timeline-institution">ARJ BCA College, Ilkal</h4>
+                            <p class="timeline-desc">
+                                Focusing on computer applications, software engineering principles, core programming
+                                paradigms (Java, Python, C++), and databases, combined with active research in AI and
+                                cloud tech.
+                            </p>
+                            <span class="status-indicator-badge status-active"><span class="pulse-dot"></span> In
+                                Progress</span>
+                        </div>
+                    </div>
+
+                    <!-- Diploma -->
+                    <div class="timeline-item reveal-on-scroll" data-delay="0.2">
+                        <div class="timeline-dot-wrapper">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Diploma Graduate</span>
+                            <h3 class="timeline-title">Diploma in Computer Science & Engineering</h3>
+                            <h4 class="timeline-institution">CV Charanthimath Rural Polytechnic College, Hungund</h4>
+                            <p class="timeline-desc">
+                                Earned comprehensive foundational expertise in computer science subjects, including
+                                system design, network setups, SQL algorithms, and application implementation.
+                            </p>
+                            <span class="status-indicator-badge"><i class="fa-solid fa-circle-check"></i> CGPA:
+                                9.4</span>
+                        </div>
+                    </div>
+
+                    <!-- SSLC -->
+                    <div class="timeline-item reveal-on-scroll" data-delay="0.3">
+                        <div class="timeline-dot-wrapper">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">SSLC Secondary School</span>
+                            <h3 class="timeline-title">10th Standard (SSLC)</h3>
+                            <h4 class="timeline-institution">Morarji Desai Residential School, Manvi</h4>
+                            <p class="timeline-desc">
+                                Completed core secondary education focusing on mathematics and science with excellence,
+                                setting the foundation for engineering studies.
+                            </p>
+                            <span class="status-indicator-badge"><i class="fa-solid fa-circle-check"></i> Percentage:
+                                80.08%</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ACHIEVEMENTS SECTION -->
+        <section class="achievements-section section-padding" id="achievements">
+            <div class="container">
+                <div class="section-header align-center">
+                    <span class="section-subtitle">Milestones</span>
+                    <h2 class="section-title">Achievements</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="achievements-grid">
+
+                    <!-- Achievement 1 -->
+                    <div class="achievement-card glass-card reveal-on-scroll" data-delay="0.1">
+                        <div class="ach-icon-box"><i class="fa-solid fa-robot"></i></div>
+                        <h3 class="ach-title">Developed Multiple AI Projects</h3>
+                        <p class="ach-desc">
+                            Successfully integrated advanced large language model logic, REST APIs, and automated
+                            processing chains to construct tools like Jarvis Assistant and MechFinder.
+                        </p>
+                    </div>
+
+                    <!-- Achievement 2 -->
+                    <div class="achievement-card glass-card reveal-on-scroll" data-delay="0.2">
+                        <div class="ach-icon-box"><i class="fa-solid fa-diagram-project"></i></div>
+                        <h3 class="ach-title">Built AI Agents</h3>
+                        <p class="ach-desc">
+                            Designed multi-agent chains incorporating document index retrieval, custom APIs, and custom
+                            tooling capabilities for task execution.
+                        </p>
+                    </div>
+
+                    <!-- Achievement 3 -->
+                    <div class="achievement-card glass-card reveal-on-scroll" data-delay="0.3">
+                        <div class="ach-icon-box"><i class="fa-solid fa-people-group"></i></div>
+                        <h3 class="ach-title">Created Educational AI Workshops</h3>
+                        <p class="ach-desc">
+                            Spearheaded local training and tutorials focused on prompt optimization, generating dynamic
+                            assets, and leveraging automated agents.
+                        </p>
+                    </div>
+
+                    <!-- Achievement 4 -->
+                    <div class="achievement-card glass-card reveal-on-scroll" data-delay="0.4">
+                        <div class="ach-icon-box"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h3 class="ach-title">Working on Startup Solutions</h3>
+                        <p class="ach-desc">
+                            Researching market needs and building responsive SaaS mockups targeting local transportation
+                            services and mechanic discoveries.
+                        </p>
+                    </div>
+
+                    <!-- Achievement 5 -->
+                    <div class="achievement-card glass-card reveal-on-scroll" data-delay="0.5">
+                        <div class="ach-icon-box"><i class="fa-solid fa-medal"></i></div>
+                        <h3 class="ach-title">Strong Academic Performance</h3>
+                        <p class="ach-desc">
+                            Maintained top scholastic rankings, culminating in a 9.4 CGPA in academic computer science
+                            and engineering coursework.
+                        </p>
+                    </div>
+
+                    <!-- Achievement 6 -->
+                    <div class="achievement-card glass-card reveal-on-scroll" data-delay="0.6">
+                        <div class="ach-icon-box"><i class="fa-solid fa-bolt"></i></div>
+                        <h3 class="ach-title">Continuous Technology Enthusiast</h3>
+                        <p class="ach-desc">
+                            Regularly analyzing state-of-the-art developments in neural networks, agent tools, frontend
+                            performance, and server architectures.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SERVICES SECTION -->
+        <section class="services-section section-padding" id="services">
+            <div class="container">
+                <div class="section-header align-center">
+                    <span class="section-subtitle">What I Offer</span>
+                    <h2 class="section-title">My Services</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="services-grid">
+
+                    <!-- Service 1 -->
+                    <div class="service-card glass-card reveal-on-scroll" data-delay="0.1">
+                        <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3 class="service-title">AI Agent Development</h3>
+                        <p class="service-desc">
+                            Developing advanced autonomous software agents tailored to answer complex questions,
+                            schedule triggers, query databases, and connect APIs.
+                        </p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card glass-card reveal-on-scroll" data-delay="0.2">
+                        <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3 class="service-title">Website Development</h3>
+                        <p class="service-desc">
+                            Building fully responsive, high-performance web pages utilizing HTML, CSS, JavaScript,
+                            MySQL, and modern frontend frameworks.
+                        </p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card glass-card reveal-on-scroll" data-delay="0.3">
+                        <div class="service-icon"><i class="fa-solid fa-user-tie"></i></div>
+                        <h3 class="service-title">Portfolio Website Creation</h3>
+                        <p class="service-desc">
+                            Crafting premium portfolios showcasing accomplishments, credentials, and projects with
+                            glassmorphism and interactive aesthetics.
+                        </p>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card glass-card reveal-on-scroll" data-delay="0.4">
+                        <div class="service-icon"><i class="fa-solid fa-comments"></i></div>
+                        <h3 class="service-title">AI Consultation</h3>
+                        <p class="service-desc">
+                            Analyzing potential AI integration in current workflows, recommending prompt improvements,
+                            and selecting appropriate APIs.
+                        </p>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card glass-card reveal-on-scroll" data-delay="0.5">
+                        <div class="service-icon"><i class="fa-solid fa-users-gear"></i></div>
+                        <h3 class="service-title">AI Workshop Training</h3>
+                        <p class="service-desc">
+                            Conducting educational workshops outlining AI tooling, generative assets, prompt frameworks,
+                            and modern development helpers.
+                        </p>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card glass-card reveal-on-scroll" data-delay="0.6">
+                        <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3 class="service-title">Software Solutions & Assitance</h3>
+                        <p class="service-desc">
+                            Delivering computer programming assistance in Python, C, C#, or Java. Fixing database
+                            structures, query speeds, and system issues.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- TESTIMONIALS SECTION -->
+        <section class="testimonials-section section-padding" id="testimonials">
+            <div class="container">
+                <div class="section-header align-center">
+                    <span class="section-subtitle">Endorsements</span>
+                    <h2 class="section-title">Testimonials</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="testimonials-container">
+                    <div class="testimonials-slider">
+
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-slide active">
+                            <div class="testimonial-content-box glass-card">
+                                <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                                <p class="testimonial-text">
+                                    Mahammad Kaif is an incredibly detail-oriented developer who rapidly grasps
+                                    technical requirements. His project MechFinder demonstrated highly organized code
+                                    construction, structured database layout, and clear frontend logic. He is definitely
+                                    one of the most promising future software engineers.
+                                </p>
+                                <div class="testimonial-author-info">
+                                    <div class="author-avatar-placeholder"><i class="fa-solid fa-user-tie"></i></div>
+                                    <div>
+                                        <h4 class="author-name">Dr. R. C. Mathad</h4>
+                                        <p class="author-designation">Academic Coordinator & Senior Mentor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content-box glass-card">
+                                <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                                <p class="testimonial-text">
+                                    Kaif's expertise in Python and AI applications is impressive for a student. He built
+                                    an autonomous assistant that demonstrated strong skills in API structures, thread
+                                    automation, and vocal interfaces. He shows deep interest in continuous engineering
+                                    learning and possesses excellent problem-solving skills.
+                                </p>
+                                <div class="testimonial-author-info">
+                                    <div class="author-avatar-placeholder"><i class="fa-solid fa-user-check"></i></div>
+                                    <div>
+                                        <h4 class="author-name">K. S. Patil</h4>
+                                        <p class="author-designation">Lead Software Engineering Consultant</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Slider Nav Dots -->
+                    <div class="slider-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <div class="section-header align-center">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+
+                    <!-- Contact Details -->
+                    <div class="contact-info reveal-on-scroll" data-delay="0.1">
+                        <h3 class="contact-info-title">Let's Discuss Your Next <span class="gradient-text">Big
+                                Project</span></h3>
+                        <p class="contact-info-text">
+                            Have an idea for an AI-powered agent, automation service, or modern application? I'm
+                            available for internships, freelance opportunities, and technical collaborations. Send a
+                            message, and I'll respond as soon as possible.
+                        </p>
+
+                        <div class="contact-details-list">
+                            <div class="contact-detail-card glass-card">
+                                <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="c-content">
+                                    <h4>Phone</h4>
+                                    <p><a href="tel:7899200478">7899200478</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-card glass-card">
+                                <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="c-content">
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:Kaifchoudri123@gmail.com">Kaifchoudri123@gmail.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-card glass-card">
+                                <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="c-content">
+                                    <h4>Location</h4>
+                                    <p>Ilkal, Karnataka, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-panel glass-card reveal-on-scroll" data-delay="0.2">
+                        <form id="portfolio-contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Name <span class="required">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-user input-icon"></i>
+                                        <input type="text" id="form-name" placeholder="Your Name" required>
+                                    </div>
+                                    <span class="error-msg" id="error-name">Please enter your name.</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="form-email">Email <span class="required">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-envelope input-icon"></i>
+                                        <input type="email" id="form-email" placeholder="email@example.com" required>
+                                    </div>
+                                    <span class="error-msg" id="error-email">Please enter a valid email.</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-subject">Subject <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-pen input-icon"></i>
+                                    <input type="text" id="form-subject" placeholder="Project, Job Opportunity..."
+                                        required>
+                                </div>
+                                <span class="error-msg" id="error-subject">Please enter a subject.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message">Message <span class="required">*</span></label>
+                                <div class="input-wrapper text-area-wrapper">
+                                    <i class="fa-solid fa-comment-dots input-icon textarea-icon"></i>
+                                    <textarea id="form-message" rows="5" placeholder="Write your message here..."
+                                        required></textarea>
+                                </div>
+                                <span class="error-msg" id="error-message">Message details are required.</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit" id="btn-submit">
+                                <span id="submit-text">Send Message</span>
+                                <i class="fa-solid fa-paper-plane" id="submit-icon"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Success Toast Notification -->
+    <div class="toast-notification" id="toast-notification" role="alert" aria-live="assertive">
+        <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <div class="toast-content">
+            <h5 class="toast-title">Message Sent!</h5>
+            <p class="toast-msg">Thank you, Mahammad will be in touch shortly.</p>
+        </div>
+        <button class="toast-close" id="toast-close" aria-label="Close notification"><i
+                class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Scroll to top">
+        <svg class="progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">Mahammad Kaif</a>
+                <p class="footer-tagline">"Building the Future with AI and Innovation."</p>
+                <div class="footer-socials">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-group">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-group">
+                <h4 class="footer-title">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p class="copyright">&copy; 2026 Mahammad Kaif. All Rights Reserved.</p>
+                <p class="designed-by">Designed with <i class="fa-solid fa-heart accent-text"></i> & AI</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Interactivity Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
